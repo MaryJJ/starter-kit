@@ -125,6 +125,7 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - [ngx-translate](https://github.com/ngx-translate/core)
 - [Lodash](https://lodash.com)
 - [Moment.js](https://momentjs.com)
+- [NG-Zorro](https://ng.ant.design/docs/introduce/en)
 
 #### Coding guides
 
