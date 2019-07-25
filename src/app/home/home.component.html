@@ -1,0 +1,18 @@
+<div class="container">
+  <mat-card>
+    <mat-card-content>
+      <mat-card-title translate>Hello world !</mat-card-title>
+      <mat-card-subtitle>
+        <app-loader [isLoading]="isLoading" size="1.5"></app-loader>
+        <nz-result
+          [nzIcon]="'smile-twotone'"
+          [nzTitle]="'Surround yourself with successful people. You can\'t be what you can\'t see.'"
+        >
+          <div nz-result-extra>
+            <button nz-button nzType="primary">Next</button>
+          </div>
+        </nz-result>
+      </mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+</div>
