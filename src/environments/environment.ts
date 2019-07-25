@@ -14,7 +14,8 @@ export const environment = {
   production: false,
   hmr: true,
   version: env.npm_package_version + '-dev',
-  serverUrl: '/api',
+  key: '$2a$10$D/QXNmo4gHRU94CrEgfNhO2gsJTc8UxVj71fmUWd0fNHGjzkyyZni',
+  serverUrl: 'https://www.potterapi.com/v1',
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'fr-FR']
 };

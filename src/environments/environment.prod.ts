@@ -10,7 +10,8 @@ export const environment = {
   production: true,
   hmr: false,
   version: env.npm_package_version,
-  serverUrl: 'https://api.chucknorris.io',
+  key: '$2a$10$D/QXNmo4gHRU94CrEgfNhO2gsJTc8UxVj71fmUWd0fNHGjzkyyZni',
+  serverUrl: 'https://www.potterapi.com/v1',
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'fr-FR']
 };

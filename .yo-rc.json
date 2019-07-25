@@ -7,25 +7,17 @@
       "skipInstall": false,
       "skipQuickstart": false,
       "initGit": true,
-      "appName": "example",
-      "target": [
-        "web"
-      ],
+      "appName": "starter-kit",
+      "target": ["web"],
       "pwa": true,
       "ui": "material",
       "layout": "side-menu",
       "auth": true,
       "lazy": true,
       "angulartics": false,
-      "tools": [
-        "prettier",
-        "hads"
-      ],
-      "utility": [
-        "lodash",
-        "moment"
-      ],
-      "projectName": "example",
+      "tools": ["prettier", "hads"],
+      "utility": ["lodash", "moment"],
+      "projectName": "Starter Kit",
       "packageManager": "npm",
       "mobile": [],
       "desktop": []

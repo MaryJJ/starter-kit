@@ -1,6 +1,6 @@
 {
-  "name": "example",
-  "short_name": "example",
+  "name": "starter-kit",
+  "short_name": "starter-kit",
   "theme_color": "#488aff",
   "background_color": "#488aff",
   "scope": "/",

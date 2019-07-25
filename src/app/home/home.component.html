@@ -1,17 +1,45 @@
 <div class="container">
   <mat-card>
     <mat-card-content>
-      <mat-card-title translate>Hello world !</mat-card-title>
+      <mat-card-title>Surround yourself with successful people. You can't be what you can't see.</mat-card-title>
       <mat-card-subtitle>
-        <app-loader [isLoading]="isLoading" size="1.5"></app-loader>
-        <nz-result
-          [nzIcon]="'smile-twotone'"
-          [nzTitle]="'Surround yourself with successful people. You can\'t be what you can\'t see.'"
-        >
-          <div nz-result-extra>
-            <button nz-button nzType="primary">Next</button>
-          </div>
-        </nz-result>
+        <div style="padding: 20px">
+          <nz-list
+            class="demo-loadmore-list"
+            [nzDataSource]="list"
+            [nzItemLayout]="'vertical'"
+            [nzLoading]="initLoading"
+            [nzRenderItem]="item"
+            [nzLoadMore]="loadMore"
+          >
+            <ng-template #item let-item>
+              <nz-list-item>
+                <nz-skeleton [nzActive]="true" [nzTitle]="false" [nzLoading]="item.loading">
+                  <nz-list-item-meta [nzTitle]="nzTitle" [nzDescription]="nzDescription">
+                    <ng-template #nzTitle>
+                      <a class="title">{{ item.character?.name }}</a>
+                    </ng-template>
+                    <ng-template #nzDescription>
+                      <div fxLayout="column">
+                        <span class="subtitle" *ngIf="item.character?.role">Role: {{ item.character?.role }}</span>
+                        <span class="subtitle" *ngIf="item.character?.house">House: {{ item.character?.house }}</span>
+                        <span class="subtitle" *ngIf="item.character?.school"
+                          >School: {{ item.character?.school }}</span
+                        >
+                        <span class="subtitle" *ngIf="item.character?.alias">Alias: {{ item.character?.alias }}</span>
+                      </div>
+                    </ng-template>
+                  </nz-list-item-meta>
+                </nz-skeleton>
+              </nz-list-item>
+            </ng-template>
+            <ng-template #loadMore>
+              <div class="loadmore">
+                <button nz-button nzType="primary" *ngIf="!loadingMore" (click)="onLoadMore()">Load more</button>
+              </div>
+            </ng-template>
+          </nz-list>
+        </div>
       </mat-card-subtitle>
     </mat-card-content>
   </mat-card>

@@ -2,25 +2,15 @@
   text-align: center;
   padding: 1em;
 }
-
-.logo {
-  width: 150px;
-  margin: 0 auto;
+.title {
+  font-size: 16px;
 }
-
-q {
-  font-style: italic;
-  quotes: "« " " »";
+.subtitle {
+  font-size: 13px;
 }
-.nz-carousel-content {
+.loadmore {
   text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #364d79;
-  color: #fff;
-  overflow: hidden;
-}
-
-h3 {
-  color: #fff;
+  margin-top: 12px;
+  height: 32px;
+  line-height: 32px;
 }
